@@ -1,3 +1,25 @@
+// JavaScript is a synchronous, blocking, single threaded language. // means that the code is executed line by line and one at a time.
+
+
+// from top to bottom, one at a time.
+// to understand this, we need to know about the event loop.
+// the event loop is a loop that checks the call stack for functions to execute.
+// if the call stack is empty, the event loop will check the message queue for functions to execute.
+// if the message queue is empty, the event loop will wait for the next function to be added to the message queue.
+// this is how javascript works.
+// if you want to understand this better, you can watch the video "JavaScript: What is the Event Loop?" by "The Net Ninja" on YouTube.
+// the event loop is a loop that checks the call stack for functions to execute.	
+// the call stack is a stack that stores the functions to execute.
+// the message queue is a queue that stores the functions to execute.
+// the event loop is a loop that checks the call stack for functions to execute.
+
+// just javascript is not enough  
+// we need new pieces which are outside of javascript to help us write asynchronous code
+// This is where web browsers and Node.js define functions and APIs that allow us to register functions that should 
+// not be executed synchronously, and should instead be invoked asynchronously when some kind of events occurs.
+// for exampleL that could be the passage of time ( setTimeout, setInterval ), the user clicking/interacting with mouse ( onclick, addEventListner ), 
+// or data being read from a file system or the arrival over network (callBacks, Promises, Async/Await)
+
 // console.log("Script js is working")
 // console.error("error")
 // console.warn("warn")
